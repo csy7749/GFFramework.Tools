@@ -7,76 +7,200 @@ labels:
 - MineBot
 - Spider
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: BackFoot
-    100002: BackLowerLeg
-    100004: BackUpperLeg
-    100006: Core
-    100008: FrontFoot
-    100010: FrontLowerLeg
-    100012: FrontUpperLeg
-    100014: LeftFoot
-    100016: LeftLowerLeg
-    100018: LeftUpperLeg
-    100020: RightFoot
-    100022: RightLowerLeg
-    100024: RightUpperLeg
-    100026: Root
-    100028: //RootNode
-    400000: BackFoot
-    400002: BackLowerLeg
-    400004: BackUpperLeg
-    400006: Core
-    400008: FrontFoot
-    400010: FrontLowerLeg
-    400012: FrontUpperLeg
-    400014: LeftFoot
-    400016: LeftLowerLeg
-    400018: LeftUpperLeg
-    400020: RightFoot
-    400022: RightLowerLeg
-    400024: RightUpperLeg
-    400026: Root
-    400028: //RootNode
-    2100000: SpiderBot
-    2300000: BackLowerLeg
-    2300002: BackUpperLeg
-    2300004: Core
-    2300006: FrontLowerLeg
-    2300008: FrontUpperLeg
-    2300010: LeftLowerLeg
-    2300012: LeftUpperLeg
-    2300014: RightLowerLeg
-    2300016: RightUpperLeg
-    2300018: Root
-    3300000: BackLowerLeg
-    3300002: BackUpperLeg
-    3300004: Core
-    3300006: FrontLowerLeg
-    3300008: FrontUpperLeg
-    3300010: LeftLowerLeg
-    3300012: LeftUpperLeg
-    3300014: RightLowerLeg
-    3300016: RightUpperLeg
-    3300018: Root
-    4300000: Root
-    4300002: BackUpperLeg
-    4300004: BackLowerLeg
-    4300006: Core
-    4300008: FrontUpperLeg
-    4300010: FrontLowerLeg
-    4300012: LeftUpperLeg
-    4300014: LeftLowerLeg
-    4300016: RightUpperLeg
-    4300018: RightLowerLeg
-    9500000: //RootNode
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: BackFoot
+  - first:
+      1: 100002
+    second: BackLowerLeg
+  - first:
+      1: 100004
+    second: BackUpperLeg
+  - first:
+      1: 100006
+    second: Core
+  - first:
+      1: 100008
+    second: FrontFoot
+  - first:
+      1: 100010
+    second: FrontLowerLeg
+  - first:
+      1: 100012
+    second: FrontUpperLeg
+  - first:
+      1: 100014
+    second: LeftFoot
+  - first:
+      1: 100016
+    second: LeftLowerLeg
+  - first:
+      1: 100018
+    second: LeftUpperLeg
+  - first:
+      1: 100020
+    second: RightFoot
+  - first:
+      1: 100022
+    second: RightLowerLeg
+  - first:
+      1: 100024
+    second: RightUpperLeg
+  - first:
+      1: 100026
+    second: Root
+  - first:
+      1: 100028
+    second: //RootNode
+  - first:
+      4: 400000
+    second: BackFoot
+  - first:
+      4: 400002
+    second: BackLowerLeg
+  - first:
+      4: 400004
+    second: BackUpperLeg
+  - first:
+      4: 400006
+    second: Core
+  - first:
+      4: 400008
+    second: FrontFoot
+  - first:
+      4: 400010
+    second: FrontLowerLeg
+  - first:
+      4: 400012
+    second: FrontUpperLeg
+  - first:
+      4: 400014
+    second: LeftFoot
+  - first:
+      4: 400016
+    second: LeftLowerLeg
+  - first:
+      4: 400018
+    second: LeftUpperLeg
+  - first:
+      4: 400020
+    second: RightFoot
+  - first:
+      4: 400022
+    second: RightLowerLeg
+  - first:
+      4: 400024
+    second: RightUpperLeg
+  - first:
+      4: 400026
+    second: Root
+  - first:
+      4: 400028
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: SpiderBot
+  - first:
+      23: 2300000
+    second: BackLowerLeg
+  - first:
+      23: 2300002
+    second: BackUpperLeg
+  - first:
+      23: 2300004
+    second: Core
+  - first:
+      23: 2300006
+    second: FrontLowerLeg
+  - first:
+      23: 2300008
+    second: FrontUpperLeg
+  - first:
+      23: 2300010
+    second: LeftLowerLeg
+  - first:
+      23: 2300012
+    second: LeftUpperLeg
+  - first:
+      23: 2300014
+    second: RightLowerLeg
+  - first:
+      23: 2300016
+    second: RightUpperLeg
+  - first:
+      23: 2300018
+    second: Root
+  - first:
+      33: 3300000
+    second: BackLowerLeg
+  - first:
+      33: 3300002
+    second: BackUpperLeg
+  - first:
+      33: 3300004
+    second: Core
+  - first:
+      33: 3300006
+    second: FrontLowerLeg
+  - first:
+      33: 3300008
+    second: FrontUpperLeg
+  - first:
+      33: 3300010
+    second: LeftLowerLeg
+  - first:
+      33: 3300012
+    second: LeftUpperLeg
+  - first:
+      33: 3300014
+    second: RightLowerLeg
+  - first:
+      33: 3300016
+    second: RightUpperLeg
+  - first:
+      33: 3300018
+    second: Root
+  - first:
+      43: 4300000
+    second: Root
+  - first:
+      43: 4300002
+    second: BackUpperLeg
+  - first:
+      43: 4300004
+    second: BackLowerLeg
+  - first:
+      43: 4300006
+    second: Core
+  - first:
+      43: 4300008
+    second: FrontUpperLeg
+  - first:
+      43: 4300010
+    second: FrontLowerLeg
+  - first:
+      43: 4300012
+    second: LeftUpperLeg
+  - first:
+      43: 4300014
+    second: LeftLowerLeg
+  - first:
+      43: 4300016
+    second: RightUpperLeg
+  - first:
+      43: 4300018
+    second: RightLowerLeg
+  - first:
+      95: 9500000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 1
-    materialName: 0
-    materialSearch: 1
-    materialLocation: 1
+    materialImportMode: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -106,25 +230,32 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -133,10 +264,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -146,13 +277,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: Root
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
