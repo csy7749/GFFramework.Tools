@@ -216,6 +216,8 @@ namespace Pathfinding {
 		/// <summary>Cached CharacterController component</summary>
 		protected CharacterController controller;
 
+		/// <summary>Cached RVOController component</summary>
+		protected RVOController rvoController;
 
 		/// <summary>
 		/// Plane which this agent is moving in.
@@ -355,6 +357,7 @@ namespace Pathfinding {
 		public virtual void FindComponents () {
 			tr = transform;
 			seeker = GetComponent<Seeker>();
+			rvoController = GetComponent<RVOController>();
 			// Find attached movement components
 			controller = GetComponent<CharacterController>();
 			rigid = GetComponent<Rigidbody>();
@@ -394,6 +397,7 @@ namespace Pathfinding {
 			if (clearPath) ClearPath();
 			prevPosition1 = prevPosition2 = simulatedPosition = newPosition;
 			if (updatePosition) tr.position = newPosition;
+			if (rvoController != null) rvoController.Move(Vector3.zero);
 			if (clearPath) SearchPath();
 		}
 
@@ -548,6 +552,11 @@ namespace Pathfinding {
 
 		/// <summary>Calculates how far to move during a single frame</summary>
 		protected Vector2 CalculateDeltaToMoveThisFrame (Vector2 position, float distanceToEndOfPath, float deltaTime) {
+			if (rvoController != null && rvoController.enabled) {
+				// Use RVOController to get a processed delta position
+				// such that collisions will be avoided if possible
+				return movementPlane.ToPlane(rvoController.CalculateMovementDelta(movementPlane.ToWorld(position, 0), deltaTime));
+			}
 			// Direction and distance to move during this frame
 			return Vector2.ClampMagnitude(velocity2D * deltaTime, distanceToEndOfPath);
 		}
@@ -730,6 +739,7 @@ namespace Pathfinding {
 			if (!Application.isPlaying || !enabled) FindComponents();
 
 			var color = ShapeGizmoColor;
+			if (rvoController != null && rvoController.locked) color *= 0.5f;
 			if (orientation == OrientationMode.YAxisForward) {
 				Draw.Gizmos.Cylinder(position, Vector3.forward, 0, radius * tr.localScale.x, color);
 			} else {
@@ -759,6 +769,8 @@ namespace Pathfinding {
 			if (unityThread && !float.IsNaN(centerOffsetCompatibility)) {
 				height = centerOffsetCompatibility*2;
 				ResetShape();
+				var rvo = GetComponent<RVOController>();
+				if (rvo != null) radius = rvo.radiusBackingField;
 				centerOffsetCompatibility = float.NaN;
 			}
 			#pragma warning disable 618
