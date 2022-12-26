@@ -7,8 +7,6 @@ using Pinwheel.CsharpWizard;
 using static Pinwheel.CsharpWizard.ClassWizard;
 using System.IO;
 using Type = System.Type;
-using Pinwheel.Griffin.PaintTool;
-using Pinwheel.Griffin;
 
 namespace Pinwheel.CsharpWizard.GriffinExtension
 {

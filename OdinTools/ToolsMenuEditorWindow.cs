@@ -3,7 +3,7 @@
  *Author:        95319
  *Date:          2022/12/26 22:44:17
  *UnityVersion:  2020.3.33f1c2
- *Description:
+ *Description:   工具类
  */
 using UnityEngine;
 using Sirenix.OdinInspector.Editor;
@@ -14,7 +14,7 @@ using Sirenix.Utilities;
 
 public class ToolsMenuEditorWindow: OdinMenuEditorWindow
 {
-    [MenuItem("Tools/ToolsMenu")]
+    [MenuItem("Tools/ToolsMenu %#z")]
     private static void OpenWindow()
     {
         var window = GetWindow<ToolsMenuEditorWindow>();

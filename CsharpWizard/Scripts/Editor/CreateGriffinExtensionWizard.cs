@@ -6,7 +6,6 @@ using UnityEditor;
 using Pinwheel.CsharpWizard;
 using static Pinwheel.CsharpWizard.ClassWizard;
 using System.IO;
-using Pinwheel.Griffin;
 
 namespace Pinwheel.CsharpWizard.GriffinExtension
 {
